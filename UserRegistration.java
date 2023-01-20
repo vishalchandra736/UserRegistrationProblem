@@ -13,6 +13,14 @@ public class UserRegistration {
         }
         return "Invalid Input!!!";
     }
+    public String lastName(String lastName){
+        Pattern pattern = Pattern.compile("^[A-Z][a-zA-Z]{2,}$");
+        Matcher matcher = pattern.matcher(lastName);
+        if(matcher.matches()) {
+            return "Valid Input";
+        }
+        return "Invalid Input!!!";
+    }
 }
 
 
