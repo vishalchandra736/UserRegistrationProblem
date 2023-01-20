@@ -13,5 +13,8 @@ public class UserRegistrationProblem {
         System.out.println("Enter the First Name (start with capital and has min 3 character) : " );
         String firstName = getUserInput();
         System.out.println(userRegistration.firstName(firstName));
+        System.out.println("Enter the Last Name (start with capital and has min 3 character) : " );
+        String lastName = getUserInput();
+        System.out.println(userRegistration.lastName(lastName));
     }
 }
