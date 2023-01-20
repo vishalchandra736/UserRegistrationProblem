@@ -21,6 +21,14 @@ public class UserRegistration {
         }
         return "Invalid Input!!!";
     }
+    public String email(String email){
+        Pattern pattern = Pattern.compile("^[a-zA-Z0-9]+([.-_+]*[a-zA-Z0-9]*)[@][a-z]+[.][a-zA-Z]{2,4}+([.]*[a-zA-Z]{2,4})?$");
+        Matcher matcher = pattern.matcher(email);
+        if(matcher.matches()) {
+            return "Valid Input";
+        }
+        return "Invalid Input!!!";
+    }
 }
 
 
