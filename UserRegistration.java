@@ -29,6 +29,15 @@ public class UserRegistration {
         }
         return "Invalid Input!!!";
     }
+    public String checkPhoneNo(String phoneNo){
+        Pattern pattern = Pattern.compile("^[0-9]{1,3}[\\s]{1}[0-9]{10}$");
+        Matcher matcher = pattern.matcher(phoneNo);
+        if(matcher.matches()) {
+            return "Valid Input";
+        }
+        return "Invalid Input!!!";
+    }
+    
 }
 
 
