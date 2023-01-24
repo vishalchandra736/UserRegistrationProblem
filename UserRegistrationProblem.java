@@ -19,5 +19,8 @@ public class UserRegistrationProblem {
         System.out.println("Enter the E-mail : " );
         String email = getUserInput();
         System.out.println(userRegistration.email(email));
+        System.out.println("Enter the Phone No (country code follow by space and 10 digit number): " );
+        String phoneNo = getUserInput();
+        System.out.println(userRegistration.checkPhoneNo(phoneNo));
     }
 }
