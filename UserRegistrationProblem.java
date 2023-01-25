@@ -1,7 +1,6 @@
 package com.blz.userregistrationproblem;
 
 import java.util.Scanner;
-
 public class UserRegistrationProblem {
     private static String getUserInput() {
         Scanner scanner = new Scanner(System.in);
