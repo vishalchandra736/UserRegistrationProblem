@@ -11,15 +11,18 @@ public class UserRegistrationProblem {
         System.out.println("Welcome to User Registration System");
         System.out.println("Enter the First Name (start with capital and has min 3 character) : " );
         String firstName = getUserInput();
-        System.out.println(userRegistration.firstName(firstName));
+        userRegistration.checkFirstName(firstName);
         System.out.println("Enter the Last Name (start with capital and has min 3 character) : " );
         String lastName = getUserInput();
-        System.out.println(userRegistration.lastName(lastName));
+        userRegistration.checkLastName(lastName);
         System.out.println("Enter the E-mail : " );
         String email = getUserInput();
-        System.out.println(userRegistration.email(email));
+        userRegistration.checkEmail(email);
         System.out.println("Enter the Phone No (country code follow by space and 10 digit number): " );
         String phoneNo = getUserInput();
-        System.out.println(userRegistration.checkPhoneNo(phoneNo));
+        userRegistration.checkPhoneNo(phoneNo);
+        System.out.println("Enter the Password (min 8 char) : " );
+        String password = getUserInput();
+        userRegistration.checkPassword(password);
     }
 }
