@@ -9,7 +9,9 @@ public class UserRegistrationProblem {
     public static void main(String[] args) {
         UserRegistration userRegistration  = new UserRegistration();
         System.out.println("Welcome to User Registration System");
-        System.out.println("Enter the First Name (start with capital and has min 3 character) : " );
+        System.out.println("Check email sample : ");
+        userRegistration.testMails();
+        System.out.println("\nEnter the First Name (start with capital and has min 3 character) : " );
         String firstName = getUserInput();
         userRegistration.checkFirstName(firstName);
         System.out.println("Enter the Last Name (start with capital and has min 3 character) : " );
