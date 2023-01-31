@@ -24,7 +24,7 @@ public class UserRegistration {
         match(matcher.matches());
     }
     public void checkPassword(String password){
-        Pattern pattern = Pattern.compile("^[A-Za-z0-9]{8,}$");
+        Pattern pattern = Pattern.compile("^(?=.* [A-Z])[0-9a-zA-Z]{8,}$");
         Matcher matcher = pattern.matcher(password);
         match(matcher.matches());
     }
