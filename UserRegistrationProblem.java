@@ -21,7 +21,7 @@ public class UserRegistrationProblem {
         System.out.println("Enter the Phone No (country code follow by space and 10 digit number): " );
         String phoneNo = getUserInput();
         userRegistration.checkPhoneNo(phoneNo);
-        System.out.println("Enter the Password (min 8 char and atleast 1 uppercase letter, and 1 number) : " );
+        System.out.println("Enter the Password (min 8 character and atleast 1 special character, 1 uppercase letter, and 1 number) : " );
         String password = getUserInput();
         userRegistration.checkPassword(password);
     }
