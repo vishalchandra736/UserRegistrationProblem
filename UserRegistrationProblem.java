@@ -1,6 +1,7 @@
-package com.blz.userregistrationproblem;
+package com.blz.userregistration;
 
 import java.util.Scanner;
+
 public class UserRegistrationProblem {
     private static String getUserInput() {
         Scanner scanner = new Scanner(System.in);
@@ -10,7 +11,6 @@ public class UserRegistrationProblem {
         UserRegistration userRegistration  = new UserRegistration();
         System.out.println("Welcome to User Registration System");
         System.out.println("Check email sample : ");
-        userRegistration.testMails();
         System.out.println("\nEnter the First Name (start with capital and has min 3 character) : " );
         String firstName = getUserInput();
         userRegistration.checkFirstName(firstName);
